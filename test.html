@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<body>
+	
+		<script>
+			 
+			var test = [];
+			var aha = [];
+			test.push("a");
+			test.push("b");
+			test.push("c");
+			
+			aha.push("a");
+			aha.push("b");
+			aha.push("c");
+				
+				$.ajax({
+					
+						url:"test.php",
+						type: "POST",
+    					data: { test : test , aha : aha },
+    //dataType:'json',
+    					success : function(data) {              
+        					alert(data);
+						},
+						error : function(request,error)
+    					{
+        					alert("Request: "+JSON.stringify(request));
+    					}
+					});
+			
+		</script>
+</body>
+</html>
