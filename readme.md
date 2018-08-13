@@ -7,4 +7,4 @@ This project is made for NOC 3BB
 - SNMP extension for PHP
 
 ### Note
-* This project using [phpseclib](http://phpseclib.sourceforge.net/) libary to connect via SSH2
+* This project using [phpseclib libary](http://phpseclib.sourceforge.net/) to connect via SSH2
